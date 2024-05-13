@@ -7,30 +7,30 @@ This project is designed to demonstrate good design and testing practices in a P
 ## Installation and Setup
 
 1. Clone the repository:
-    ```bash
+    ```
     git clone https://github.com/yourusername/yourrepository.git
     ```
 2. Navigate to the project directory:
-    ```bash
+    ```
     cd yourrepository
     ```
 3. Create a virtual environment and activate it:
-    ```bash
+    ```
     python -m venv .venv
     .\.venv\Scripts\activate
     ```
 4. Install the required packages:
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 5. Set up the database:
-    ```bash
+    ```
     flask db init
     flask db migrate
     flask db upgrade
     ```
 6. Run the application:
-    ```bash
+    ```
     flask run
     ```
 
@@ -43,6 +43,6 @@ The application is designed with separation of concerns in mind. It follows the 
 The application uses unit tests to ensure each part of the application works as expected. The tests are located in the `tests` directory. Each service and route has its own test file. The tests use the `unittest` package and a SQLite in-memory database for isolation between tests.
 
 To run the tests, use the following command:
-```bash
+```
 pytest
 ```
