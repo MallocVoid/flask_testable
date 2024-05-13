@@ -1,0 +1,25 @@
+# .gitignore
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.pid
+*.seed
+*.pid.lock
+*.py,cover
+*.DS_Store
+*.egg-info/
+dist/
+build/
+*.egg
+*.sqlite
+.pytest_cache/
+.env
+.venv

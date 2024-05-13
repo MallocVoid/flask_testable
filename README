@@ -1,0 +1,48 @@
+# Flask Testable Application
+
+## Introduction
+
+This project is designed to demonstrate good design and testing practices in a Python Flask application. It includes a task manager with basic CRUD operations.
+
+## Installation and Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/yourrepository.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd yourrepository
+    ```
+3. Create a virtual environment and activate it:
+    ```bash
+    python -m venv .venv
+    .\.venv\Scripts\activate
+    ```
+4. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+5. Set up the database:
+    ```bash
+    flask db init
+    flask db migrate
+    flask db upgrade
+    ```
+6. Run the application:
+    ```bash
+    flask run
+    ```
+
+## Design Philosophy
+
+The application is designed with separation of concerns in mind. It follows the MVC (Model-View-Controller) pattern. The `models.py` file defines the database models, the `services.py` file contains the business logic, and the `routes.py` file handles the routing and presentation logic.
+
+## Testing Philosophy
+
+The application uses unit tests to ensure each part of the application works as expected. The tests are located in the `tests` directory. Each service and route has its own test file. The tests use the `unittest` package and a SQLite in-memory database for isolation between tests.
+
+To run the tests, use the following command:
+```bash
+pytest
+```
